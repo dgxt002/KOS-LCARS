@@ -52,7 +52,7 @@ function b1click
     local info_text is list().
     info_text:add("Ship: " +shipname).
     info_text:add("Mass: " +ship:mass " Tons").
-    info_text:add("Delta V: " +ship:deltav:current).
+    info_text:add("Delta V: " +ship:deltav:current "m/s").
     set listAsString to "".
     for item in info_text {
     set listAsString to listAsString + item + "\n".
