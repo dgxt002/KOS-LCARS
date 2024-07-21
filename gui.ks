@@ -51,8 +51,8 @@ function b1click
     set info_window:style:fontsize to 14.
     local info_text is list().
     info_text:add("Ship: " +shipname).
-    info_text:add("Mass: " +ship:mass " Tons").
-    info_text:add("Delta V: " +ship:deltav:current "m/s").
+    info_text:add("Mass: " +ship:mass).
+    info_text:add("Delta V: " +ship:deltav:current).
     set listAsString to "".
     for item in info_text {
     set listAsString to listAsString + item + "\n".
